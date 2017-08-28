@@ -1,0 +1,49 @@
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+h1 {
+  font-style: italic;
+  color: black;
+}
+
+background-image {
+  width: 10px;
+  height: 10px;
+}
+
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: coral;
+  color: black;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.sign {}
+
+.collapse {
+  display: none;
+}
