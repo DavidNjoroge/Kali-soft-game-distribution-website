@@ -1,0 +1,25 @@
+
+body {
+  overflow-x: hidden;
+  font-family: 'Bubbler One', sans-serif;
+  background-color: black;
+}
+
+
+
+
+.picture {
+  border-radius: 8px;
+  width: 1200px;
+  height: 600px;
+  position: relative;
+}
+
+#mySlider {
+  margin-top: 20px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
