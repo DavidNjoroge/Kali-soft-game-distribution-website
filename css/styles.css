@@ -1,0 +1,29 @@
+body {
+  overflow-x: hidden;
+}
+
+#sidebar {
+  background-color: coral;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.landing {
+  background-image: url(../img/cod.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100px;
+  position: relative;
+}
+
+.youtube {
+  margin-right: 18px;
+}
+
+.content-wrapper {}
