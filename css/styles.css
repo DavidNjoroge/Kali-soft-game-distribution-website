@@ -111,3 +111,41 @@ h1 {
   height: 600px;
   margin-left: 0px;
 }
+
+
+/*card styling*/
+
+.card {}
+
+
+  /*page 2 styling dont touch*/
+
+  /*page 2 landing styling*/
+
+
+  #thumb{
+    padding-top: 40px;
+    width: 360px;
+
+  }
+
+  #lorem{
+    padding: 40px;
+  }
+
+#intro{
+  background-size: cover;
+  
+  color: white;
+  font-weight: bold;
+  height: 405px;
+
+}
+
+p {
+  color: white;
+
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
