@@ -27,3 +27,25 @@ body {
 }
 
 .content-wrapper {}
+
+  /*Main content styling don't touch*/
+
+  .landing2{
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+
+/*carousel styling*/
+
+.d-block{
+
+  width: 1200px;
+  height: 500px;
+  position: relative;
+}
+
+#kalicarousel {
+
+}
