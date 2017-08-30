@@ -1,16 +1,17 @@
 games = []
 actions = []
 
-function Game(name, genre, img) {
+function Game(name, genre, img,screenS) {
   this.name = name
   this.genre = genre
   this.img = img
+  this.screenS=screenS
 }
 
 var dataBas = function() {
   gta = new Game('grand theft auto', 'action', 'img/gta.jpg')
   games.push(gta)
-  cod = new Game('Call of duty', 'action', 'img/cod.jpg')
+  cod = new Game('Call of duty', 'action', 'img/cod.jpg',["img/cod3.jpg","img/cod5.jpg","img/cod6.jpg"])
   games.push(cod)
   bf4 = new Game('BattleField 4', 'action', 'img/bf4.jpg')
   games.push(bf4)
