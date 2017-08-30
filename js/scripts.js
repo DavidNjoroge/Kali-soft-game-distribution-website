@@ -14,8 +14,6 @@ var dataBas = function() {
   games.push(cod)
   bf4 = new Game('BattleField 4', 'action', 'img/bf4.jpg')
   games.push(bf4)
-  far = new Game('FarCry', 'action', 'img/gta.jpg')
-  games.push(far)
   fifa = new Game('FIFA 18', 'action', 'img/fifa.jpg')
   games.push(fifa)
   ass = new Game('assasins creed', ['drama', 'action'], 'img/assasin.jpg')
@@ -30,7 +28,7 @@ var genre = function() {
   for (var i = 0; i < 4; i++) {
     if (games[i].genre === 'action') {
       // actions.push(games[i])
-      $('#carddeck').append('<div class="card"><img class="card-img-top" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')
+      $('#carddeck').append('<div class="card qwerty" id="'+i+'"><a href="page2.html">'+games[i].name+'</a><img class="card-img-top" id="'+i+'" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')
 
 
       console.log(games[i].name);
@@ -40,9 +38,34 @@ var genre = function() {
   }
 }
 
-
+//description to take us to page 2 and append properties of that particular game
 $(document).ready(function() {
+  $('#asdf').click(function(event) {
+    localStorage.setItem('data',JSON.stringify(games))
+    var loca=JSON.parse(localStorage.getItem('data'))
+    alert(loca[0].name);
+  });
+  $("#finya").click(function(event) {
+    localStorage.setItem('obj',JSON.stringify(games[2]));
+
+  });
+  // $('.card-img-top').click(function(event) {
+  //   var clickedItem = $(this).attr('id');
+  //   localStorage.setItem('clickedItem', clickedItem);
+  //   console.log(localStorage.clickedItem);
+  // });
   dataBas()
   genre()
+  $('.qwerty').click(function(event) {
+    //when you open the link it goes to page2.html and saves the games array to localStorage
+    localStorage.setItem('data',JSON.stringify(games))
+    var loca=JSON.parse(localStorage.getItem('data'))
+    var clickedItem = $(this).attr('id');
+
+  localStorage.setItem('id',clickedItem)
+
+    console.log(clickedItem);
+  });
+
 
 });
