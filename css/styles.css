@@ -107,8 +107,8 @@ h1 {
   position: relative;
 }
 
-.carousel-inner {
-  height: 600px;
+.carousel-inner>.item>img {
+  height: 270px;
   margin-left: 0px;
 }
 
@@ -160,4 +160,14 @@ h3 {
 .jumbotron {
   padding: 30px;
   text-align: center;
+}
+
+#kalicarousel {
+  width: 480px;
+  height: 270px;
+  margin-left: 250px;
+}
+
+.img-fluid {
+  height: 270px;
 }
