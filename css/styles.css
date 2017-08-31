@@ -182,4 +182,11 @@ h3 {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
+  /*background-color: black;*/
+}
+
+#action {
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
 }
