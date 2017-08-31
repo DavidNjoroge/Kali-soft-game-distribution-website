@@ -162,20 +162,19 @@ $(document).ready(function() {
   // });
   $('.qwerty').click(function(event) {
     //when you open the link it goes to page2.html and saves the games array to localStorage
-    localStorage.setItem('data', JSON.stringify(actionCipher))
+    localStorage.setItem('data', JSON.stringify(games))
     var loca = JSON.parse(localStorage.getItem('data'))
     var clickedItem = $(this).attr('id');
 
     localStorage.setItem('id', clickedItem)
 
-    console.log(clickedItem);
   });
 
 
   //
   $('.qwertyIndie').click(function(event) {
     //when you open the link it goes to page2.html and saves the games array to localStorage
-    localStorage.setItem('data', JSON.stringify(indieCipher))
+    localStorage.setItem('data', JSON.stringify(games))
     var loca = JSON.parse(localStorage.getItem('data'))
     var clickedItem = $(this).attr('id');
 
