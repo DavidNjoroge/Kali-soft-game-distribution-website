@@ -140,10 +140,9 @@ h1 {
 }
 
 p {
-  color: white;
-  display: block;
-  font-size: 22px;
-  font-weight: bold;
+  color: white
+  /*display: block;*/
+  font-size: 15px;
 }
 
 h3 {
