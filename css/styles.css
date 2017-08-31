@@ -152,3 +152,12 @@ h3 {
 .qwerty {
   margin: 20px;
 }
+
+.img {
+  padding: 20px;
+}
+
+.jumbotron {
+  padding: 30px;
+  text-align: center;
+}

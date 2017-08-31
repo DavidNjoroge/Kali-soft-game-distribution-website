@@ -27,7 +27,7 @@ gamex = []
 var gamess = function() {
   for (var i = 0; i < localObj.length; i++) {
 
-    $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + localObj[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + localObj[i].img + '" width="243" alt="Card image cap"></div>')
+    $('#carddeck5').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + localObj[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + localObj[i].img + '" width="243" alt="Card image cap"></div>')
 
   }
 
