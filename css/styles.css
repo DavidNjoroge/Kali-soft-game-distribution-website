@@ -135,7 +135,7 @@ h1 {
 
 #intro{
   background-size: cover;
-  
+
   color: white;
   font-weight: bold;
   height: 405px;
@@ -143,9 +143,9 @@ h1 {
 }
 
 p {
-  color: white;
 
-  display: block;
-  font-size: 22px;
-  font-weight: bold;
+  color: white
+  /*display: block;*/
+  font-size: 15px;
+
 }
