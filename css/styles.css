@@ -107,8 +107,8 @@ h1 {
   position: relative;
 }
 
-.carousel-inner {
-  height: 600px;
+.carousel-inner>.item>img {
+  height: 270px;
   margin-left: 0px;
 }
 
@@ -118,34 +118,56 @@ h1 {
 .card {}
 
 
-  /*page 2 styling dont touch*/
-
-  /*page 2 landing styling*/
+/*page 2 styling dont touch*/
 
 
-  #thumb{
-    padding-top: 40px;
-    width: 360px;
+/*page 2 landing styling*/
 
-  }
+#thumb {
+  padding-top: 40px;
+  width: 360px;
+}
 
-  #lorem{
-    padding: 40px;
-  }
+#lorem {
+  padding: 40px;
+}
 
-#intro{
+#intro {
   background-size: cover;
-  
   color: white;
   font-weight: bold;
   height: 405px;
-
 }
 
 p {
-  color: white;
+  color: white
+  /*display: block;*/
+  font-size: 15px;
+}
 
-  display: block;
-  font-size: 22px;
-  font-weight: bold;
+h3 {
+  padding: 20px;
+}
+
+.qwerty {
+  margin: 20px;
+}
+
+.img {
+  padding: 20px;
+}
+
+.jumbotron {
+  padding: 30px;
+  text-align: center;
+}
+
+#kalicarousel {
+  width: 480px;
+  height: 270px;
+  margin-left: 250px;
+}
+
+.img-fluid {
+  height: 270px;
 }
