@@ -73,7 +73,7 @@ var dataBas = function() {
 }
 var genre = function() {
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 5; i++) {
     if (games[i].genre === 'Action') {
       // actions.push(games[i])
       $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + games[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')

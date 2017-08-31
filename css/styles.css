@@ -153,10 +153,6 @@ h3 {
   margin: 20px;
 }
 
-.img {
-  padding: 20px;
-}
-
 .jumbotron {
   padding: 30px;
   text-align: center;
@@ -165,10 +161,6 @@ h3 {
 #kalicarousel {
   width: 1080px;
   padding: 20px;
-}
-
-.img-fluid {
-  height: 480px;
 }
 
 .landing2 {
@@ -181,4 +173,13 @@ h3 {
   padding: 20px;
   background-image: url("../img/nfsback.jpg");
   background-size: cover;
+}
+
+.card {
+  border: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
