@@ -1,10 +1,11 @@
 games = []
 actions = []
 
-function Game(name, genre, img) {
+function Game(name, genre, img, screenS) {
   this.name = name
   this.genre = genre
   this.img = img
+  this.screenS = screenS
 }
 
 

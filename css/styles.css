@@ -163,11 +163,22 @@ h3 {
 }
 
 #kalicarousel {
-  width: 480px;
-  height: 270px;
-  margin-left: 250px;
+  width: 1080px;
+  padding: 20px;
 }
 
 .img-fluid {
-  height: 270px;
+  height: 480px;
+}
+
+.landing2 {
+  background-color: black;
+}
+
+.blasterIntro {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background-image: url("../img/nfsback.jpg");
+  background-size: cover;
 }
