@@ -3,7 +3,7 @@ body {
 }
 
 #sidebar {
-  background-color: #191535;
+  background-color: #03030f;
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
@@ -170,4 +170,8 @@ h3 {
 
 .img-fluid {
   height: 270px;
+}
+
+#content {
+  background-color: #010115;
 }
