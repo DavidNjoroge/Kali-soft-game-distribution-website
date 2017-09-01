@@ -104,12 +104,6 @@ var genreCipher = function() {
 
     }
   }
-
-
-
-
-
-
 }
 
 
@@ -117,15 +111,21 @@ var genreCipher = function() {
 
 function page1Appender() {
   for (var i = 0; i < 4; i++) {
-    $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + actionCipher[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + actionCipher[i].img + '" width="243" alt="Card image cap"></div>')
+    $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + games[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')
     //appends to the trending games
-    $('#carddeck-indie').append('<div class="card qwertyIndie" id="' + i + '"><a href="page2.html">' + indieCipher[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + indieCipher[i].img + '" width="243" alt="Card image cap"></div>')
+    //  $('#carddeck-indie').append('<div class="card qwertyIndie" id="' + i + '"><a href="page2.html">' + indieCipher[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + indieCipher[i].img + '" width="243" alt="Card image cap"></div>')
   }
 
 }
 
+function appender2() {
+  for (var i = 0; i < games.length; i++) {
+    if (games[i].genre === "Indie Games") {
+      $('#carddeck-indie').append('<div class="card qwertyIndie" id="' + i + '"><a href="page2.html">' + games[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')
 
-
+    }
+  }
+}
 
 // var genre = function() {
 //
@@ -148,6 +148,7 @@ $(document).ready(function() {
 
   genreCipher()
   page1Appender()
+  appender2()
   console.log(games);
   $('#asdf').click(function(event) {
     localStorage.setItem('data', JSON.stringify(games))

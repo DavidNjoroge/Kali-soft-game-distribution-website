@@ -26,6 +26,15 @@ body {
   margin-right: 18px;
 }
 
+.downwardbtn {
+  margin-top: 200px;
+  color: purple
+}
+
+#emm {
+  color: blue
+}
+
 .content-wrapper {}
 
 .dropbtn {
@@ -188,6 +197,14 @@ h3 {
   padding: 20px;
   background-image: url("../img/nfsback.jpg");
   background-size: cover;
+}
+
+#dev {
+  background-image: url(../img/gamm.jpg);
+}
+
+aside {
+  position: fixed;
 }
 
 .card {
