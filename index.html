@@ -14,31 +14,43 @@
 <body>
   <div class="wrapper">
     <nav id="sidebar">
-      <div class="sidebar-header">
-        <h1><strong><a href="index.html">KaliSoft</a></strong></h1>
-      </div>
-      <form>
-        <input type="text" name="search" value="" placeholder="Search Games">
-      </form>
-      <div class="dropdown">
-        <button class="dropbtn">Browse Games</button>
-        <div class="dropdown-content">
-          <ul>
-            <li><a href="page3.html">All Games</a></li>
-            <li><a href="#">Free Games</a></li>
-            <li> <a href="#">More</a></li>
-          </ul>
+      <aside>
+        <div class="sidebar-header">
+          <h1><strong><a href="index.html">KaliSoft</a></strong></h1>
         </div>
-      </div>
-      <div class="btn-group">
-        <button type="submit" name="sign">Sign In</button>
-        <button type="submit" name="reg">Register</button>
-      </div>
-      <div class="back">
+        <form>
+          <input type="text" name="search" value="" placeholder="Search Games">
+        </form>
+        <div class="dropdown">
+          <button class="dropbtn">Browse Games</button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="page3.html">All Games</a></li>
+              <li><a href="#">Free Games</a></li>
+              <li> <a href="#">More</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="downwardbtn">
+          <p>
+            <button type="submit" name="button"><a href="download.html">DOWNLOAD</a></button>
+          </p>
+          <p>
+            <button type="submit" name="button"><a href="">REGISTER</a></button>
+          </p>
+        </div>
+
+        <!--  <div class="btn-group">
+          <button type="submit" name="sign">Sign In</button>
+          <button type="submit" name="reg">Register</button>
+        </div>
+
+        <div class="back">
 
 
-      </div>
+        </div>-->
     </nav>
+    </aside>
 
     <!--  <nav id="sidebar">
       <div class="sidebar-header">
@@ -222,12 +234,8 @@
       <!--top sellers section-->
       <div class="indie-games">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 centred">
-              <h4><strong id="asdf">Top Sellers</strong></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+          <div class="card-deck" id="carddeck">
+
           </div>
         </div>
 

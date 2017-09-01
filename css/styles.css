@@ -3,7 +3,7 @@ body {
 }
 
 #sidebar {
-  background-color: #191535;
+  background-color: #03030f;
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
@@ -24,6 +24,15 @@ body {
 
 .youtube {
   margin-right: 18px;
+}
+
+.downwardbtn {
+  margin-top: 200px;
+  color: purple
+}
+
+#emm {
+  color: blue
 }
 
 .content-wrapper {}
@@ -70,8 +79,8 @@ body {
   background-color: #3e8e41;
 }
 
-h1 {
-  color: #e4c9ea;
+h1, h2, h3, h4 {
+  color: #3333ff;
 }
 
 .btn-group button {
@@ -110,6 +119,21 @@ h1 {
 .carousel-inner>.item>img {
   height: 270px;
   margin-left: 0px;
+}
+
+.carousel-item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.8;
+  /*filter: alpha(opacity=90);*/
+}
+
+.carousel-item img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 
@@ -173,6 +197,14 @@ h3 {
   padding: 20px;
   background-image: url("../img/nfsback.jpg");
   background-size: cover;
+}
+
+#dev {
+  background-image: url(../img/gamm.jpg);
+}
+
+aside {
+  position: fixed;
 }
 
 .card {
