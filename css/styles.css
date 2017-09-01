@@ -3,7 +3,7 @@ body {
 }
 
 #sidebar {
-  background-color: #191535;
+  background-color: #03030f;
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
@@ -221,4 +221,8 @@ body {
   padding: 30px;
   text-align: center;
   font-size: 50px;
+}
+
+#content {
+  background-color: #010115;
 }
