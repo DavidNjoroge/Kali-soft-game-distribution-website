@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: 'Bubbler One', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   /*background-color: black;*/
 }
 
@@ -62,6 +62,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: white;
+  padding: 100px;
 }
 
 #system-req {}

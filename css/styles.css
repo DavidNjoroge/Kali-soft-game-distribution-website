@@ -79,8 +79,8 @@ body {
   background-color: #3e8e41;
 }
 
-h1 {
-  color: #e4c9ea;
+h1, h2, h3, h4 {
+  color: #3333ff;
 }
 
 .btn-group button {
