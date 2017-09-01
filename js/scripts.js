@@ -1,5 +1,13 @@
 games = []
 actions = []
+actionCipher = []
+indieCipher = []
+casualCipher = []
+adventureCipher = []
+sportsCipher = []
+racingCipher = []
+
+
 
 function Game(name, genre, img, screenS) {
   this.name = name
@@ -71,35 +79,82 @@ var dataBas = function() {
   dirt = new Game('DiRT Rally', 'Sports', 'img/dirt1.jpg', ['img/dirtsc1.png', 'img/dirtsc2.jpg', 'img/dirtsc3.png', 'img/dirtsc4.jpg'])
   games.push(dirt)
 }
-var genre = function() {
-
-  for (var i = 0; i < 4; i++) {
-    if (games[i].genre === 'Action') {
-      // actions.push(games[i])
-      $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + games[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')
 
 
-      console.log(games[i].name);
-    } else {
-      console.log('except' + games[i]);
+//sorts games to categories
+var genreCipher = function() {
+  for (var i = 0; i < games.length; i++) {
+    if (games[i].genre === "Action") {
+      actionCipher.push(games[i])
+      console.log(actionCipher);
+    } else if (games[i].genre === "Indie Games") {
+      indieCipher.push(games[i])
+      console.log("boom");
+    } else if (games[i].genre === "Racing") {
+      racingCipher.push(games[i])
+
+    } else if (games[i].genre === "Sports") {
+      sportsCipher.push(games[i])
+
+    } else if (games[i].genre === "Adventure") {
+      adventureCipher.push(games[i])
+
+    } else if (games[i].genre === "Casual") {
+      casualCipher.push(games[i])
+
     }
   }
+
+
+
+
+
+
 }
+
+
+//appends games 4 games for selected arrays to page1
+
+function page1Appender() {
+  for (var i = 0; i < 4; i++) {
+    $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + actionCipher[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + actionCipher[i].img + '" width="243" alt="Card image cap"></div>')
+    //appends to the trending games
+    $('#carddeck-indie').append('<div class="card qwertyIndie" id="' + i + '"><a href="page2.html">' + indieCipher[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + indieCipher[i].img + '" width="243" alt="Card image cap"></div>')
+  }
+
+}
+
+
+
+
+// var genre = function() {
+//
+//   for (var i = 0; i < 5; i++) {
+//     if (games[i].genre === 'Action') {
+//       // actions.push(games[i])
+//       $('#carddeck').append('<div class="card qwerty" id="' + i + '"><a href="page2.html">' + games[i].name + '</a><img class="card-img-top" id="' + i + '" src="' + games[i].img + '" width="243" alt="Card image cap"></div>')
+//
+//
+//       console.log(games[i].name);
+//     } else {
+//       console.log('except' + games[i]);
+//     }
+//   }
+// }
 
 //description to take us to page 2 and append properties of that particular game
 $(document).ready(function() {
   dataBas()
-  genre()
+
+  genreCipher()
+  page1Appender()
   console.log(games);
   $('#asdf').click(function(event) {
     localStorage.setItem('data', JSON.stringify(games))
     var loca = JSON.parse(localStorage.getItem('data'))
     alert(loca[0].name);
   });
-  $("#finya").click(function(event) {
-    localStorage.setItem('obj', JSON.stringify(games[2]));
 
-  });
   // $('.card-img-top').click(function(event) {
   //   var clickedItem = $(this).attr('id');
   //   localStorage.setItem('clickedItem', clickedItem);
@@ -113,8 +168,31 @@ $(document).ready(function() {
 
     localStorage.setItem('id', clickedItem)
 
+  });
+
+
+  //
+  $('.qwertyIndie').click(function(event) {
+    //when you open the link it goes to page2.html and saves the games array to localStorage
+    localStorage.setItem('data', JSON.stringify(games))
+    var loca = JSON.parse(localStorage.getItem('data'))
+    var clickedItem = $(this).attr('id');
+
+    localStorage.setItem('id', clickedItem)
+
     console.log(clickedItem);
   });
 
+
+  $('#finya').click(function(event) {
+    //when you open the link it goes to page2.html and saves the games array to localStorage
+    localStorage.setItem('data', JSON.stringify(games))
+    var loca = JSON.parse(localStorage.getItem('data'))
+    var clickedItem = $(this).attr('id');
+
+    localStorage.setItem('id', clickedItem)
+
+    console.log(clickedItem);
+  });
 
 });

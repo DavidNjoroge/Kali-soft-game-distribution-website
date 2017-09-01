@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Bubbler One', sans-serif;
-  /*background-color: black;*/
+    /*background-color: black;*/
 }
 
 .picture {
@@ -34,6 +34,7 @@ body {
 
 #intro {
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   font-weight: bold;
   height: 505px;
@@ -43,7 +44,7 @@ body {
   /*background-color: black;*/
 }
 
-.screen-shots, #overview, #description, #system-req {
+.screen-shots, #overview, #system-req {
   padding-top: 20px;
   font-size: 15px;
 }
@@ -56,7 +57,12 @@ body {
   width: auto;
 }
 
-#description {}
+#description {
+  font-size: 15px;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
 
 #system-req {}
 
@@ -72,4 +78,9 @@ body {
 .card-img-top {
   width: 260px;
   height: 140px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
