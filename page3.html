@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
 
@@ -13,32 +14,41 @@
 <body>
   <div class="wrapper">
     <nav id="sidebar">
-      <div class="sidebar-header">
-        <h1><strong>KaliSoft</strong></h1>
-      </div>
-      <form>
-        <input type="text" name="search" value="" placeholder="Search Games">
-      </form>
-      <div class="dropdown">
-        <button class="dropbtn">Browse Games</button>
-        <div class="dropdown-content">
-          <ul>
-            <li><a href="#">All Games</a></li>
-            <li><a href="#">Free Games</a></li>
-            <li> <a href="#">More</a></li>
-          </ul>
+      <aside>
+        <div class="sidebar-header">
+          <h1><strong><a href="index.html">KaliSoft</a></strong></h1>
         </div>
-      </div>
-      <div class="btn-group">
-        <button type="submit" name="sign">Sign In</button>
-        <button type="submit" name="reg">Register</button>
-      </div>
-      <div class="back">
+        <form>
+          <input type="text" name="search" value="" placeholder="Search Games">
+        </form>
+        <div class="dropdown">
+          <button class="dropbtn">Browse Games</button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="page3.html">All Games</a></li>
+              <li><a href="#">Free Games</a></li>
+              <li> <a href="#">More</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="downwardbtn">
+          <p>
+            <button type="submit" name="button"><a href="download.html">DOWNLOAD</a></button>
+          </p>
+          <p>
+            <button type="submit" name="button"><a href="">REGISTER</a></button>
+          </p>
+        </div>
+        <!--<div class="btn-group">
+          <button type="submit" name="sign">Sign In</button>
+          <button type="submit" name="reg">Register</button>
+        </div>-->
+        <div class="back">
 
 
-      </div>
+        </div>
     </nav>
-
+    </aside>
     <!--  <nav id="sidebar">
       <div class="sidebar-header">
         <h1><strong>KaliSoft</strong></h1>
@@ -62,10 +72,28 @@
 
 
     <!--content wrapper begins-->
-    <div class="">
-      <h2>page 3</h2>
+    <div class="action">
+      <div class="container">
+        <h4 id="action">All Games</h4>
+        <div class="card-deck" id="carddeck5">
 
+        </div>
+
+
+        <div class="footer">
+          <div class="contaisner">
+            <div class="jumbotron">
+              <h3>contact us:</h3>
+              <img class="img" src="icons/fb 64px.jpg" alt="">
+              <img class="img" src="icons/twitter 64px.jpg" alt="">
+              <img class="img" src="icons/youtube 64px.jpg" alt="">
+              <img class="img" src="icons/insta 64px.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!--content wrapper ends-->
 
 
@@ -79,7 +107,7 @@
   <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
 
-  <script src="js/scripts.js">
+  <script src="js/scripts3.js">
   </script>
 </body>
 

@@ -1,12 +1,8 @@
-
 body {
   overflow-x: hidden;
-  font-family: 'Bubbler One', sans-serif;
-  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  /*background-color: black;*/
 }
-
-
-
 
 .picture {
   border-radius: 8px;
@@ -22,4 +18,70 @@ body {
 .item {
   position: relative;
   overflow: hidden;
+}
+
+
+/*stylin page 2 for games template*/
+
+#thumb {
+  padding-top: 40px;
+  width: 360px;
+}
+
+#lorem {
+  padding: 40px;
+}
+
+#intro {
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-weight: bold;
+  height: 505px;
+}
+
+. section {
+  /*background-color: black;*/
+}
+
+.screen-shots, #overview, #system-req {
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+
+/*styling the cards*/
+
+.card-img-top {
+  padding-left: 30px;
+  width: auto;
+}
+
+#description {
+  font-size: 15px;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  padding: 100px;
+}
+
+#system-req {}
+
+.col-md-4 {
+  padding-right: 40px;
+}
+
+.col-md-8 {
+  padding-left: 95px;
+  padding-right: 40px;
+}
+
+.card-img-top {
+  width: 260px;
+  height: 140px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
