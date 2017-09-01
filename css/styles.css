@@ -205,3 +205,24 @@ body {
   text-align: center;
   font-size: 50px;
 }
+
+
+/*changes usiku*/
+
+#landing3 {
+  background-image: url("../img/titanfall-2-standard-edition_pdp_3840x2160_en_WW.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 200px;
+}
+
+#landing4 {
+  background-image: url("../img/titanfall2-techtest-s1_pdp_screenhi_3840x2160_en_ww.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 200px;
+}
+
+.indie-games {
+  padding-bottom: 20px;
+}

@@ -46,6 +46,7 @@ body {
 
 .screen-shots, #overview, #system-req {
   padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 15px;
 }
 
@@ -53,18 +54,46 @@ body {
 /*styling the cards*/
 
 .card-img-top {
-  padding-left: 30px;
+  /*padding-left: 30px;*/
   width: auto;
+  height: auto;
 }
+
+
+/*changes usiku*/
 
 #description {
   font-size: 15px;
   background-attachment: fixed;
   background-size: cover;
   color: white;
+  padding: 100px;
 }
 
-#system-req {}
+#description h4 {
+  color: black;
+}
+
+#overview h4 {
+  color: yellowgreen;
+}
+
+.screen-shots h4 {
+  color: yellowgreen;
+}
+
+#overview {
+  background-color: black;
+  color: white;
+}
+
+#system-req {
+  background-color: #08306D;
+  color: white;
+}
+
+
+/*changes usiku ends*/
 
 .col-md-4 {
   padding-right: 40px;
@@ -83,4 +112,9 @@ body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
+  background-color: black;
+}
+
+.others, .footer {
+  background-color: white;
 }
