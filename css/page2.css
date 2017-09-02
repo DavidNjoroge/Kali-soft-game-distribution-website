@@ -83,12 +83,12 @@ body {
 }
 
 #overview {
-  background-color: black;
+  background-color: #191535;
   color: white;
 }
 
 #system-req {
-  background-color: #08306D;
+  background-color: #191535;
   color: white;
 }
 
@@ -112,7 +112,7 @@ body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  background-color: black;
+  background-color: #191535;
 }
 
 .others, .footer {
