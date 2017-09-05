@@ -3,7 +3,7 @@ body {
 }
 
 #sidebar {
-  background-color: #191535;
+  background-color: #03030f;
   min-width: 250px;
   max-width: 250px;
   min-height: 100vh;
@@ -79,8 +79,8 @@ body {
   background-color: #3e8e41;
 }
 
-h1 {
-  color: #e4c9ea;
+h1, h2, h3, h4 {
+  color: #3333ff;
 }
 
 .btn-group button {
